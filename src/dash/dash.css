@@ -1,0 +1,262 @@
+.dashboard {
+  background-color: black;
+  width: 83.3%;
+  height: 92%;
+  position: absolute;
+  top: 58px;
+  left: 253px;
+  text-align: center;
+  font-size: 25px;
+  color: #6c7293;
+}
+body {
+  background-color: black;
+}
+table {
+  background-color: #191c24;
+}
+/* table tr{
+    display: flex;
+} */
+.dashboard table input {
+  border-radius: 15px;
+  font-size: 25px;
+}
+.dashboard table select {
+  padding: 0 20px;
+  border-radius: 15px;
+}
+.button {
+  background-color: #6c7293;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* data view */
+.view {
+  width: 600px;
+  padding: 50px;
+  margin: auto;
+  background-color: #191c24;
+}
+.view table {
+  border: 2px solid black;
+  width: 500px;
+  text-align: start;
+}
+/* admin data view */
+.admin_view {
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+  background-color: #191c24;
+}
+.admin_view table {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #191c24;
+}
+.admin_view thead th {
+  color: white;
+  padding: 10px;
+}
+.admin_view tbody td {
+  padding: 10px;
+  text-align: center;
+}
+/* inquiry */
+.inquiry {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background-color: black;
+}
+.inquiry table {
+  background-color: #191c24;
+  border: 2px solid black;
+  width: 100%;
+  text-align: start;
+}
+.inquiry table tr th {
+  background-color: #191c24;
+  padding: 25px;
+}
+
+.dash_btn {
+  background-color: #6c7293;
+  color: black;
+  border-radius: 20px;
+  width: 120px;
+  position: absolute;
+  left: 560px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.dash_btn:hover {
+  background-color: #b0b5c9;
+  transition: 0.7s;
+}
+.dash_btn2 {
+  background-color: #6c7293;
+  color: black;
+  border-radius: 20px;
+  width: 170px;
+  position: absolute;
+  left: 680px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.dash_btn2:hover {
+  background-color: #b0b5c9;
+  transition: 0.7s;
+}
+/* admin */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: -80px;
+}
+
+.form-container {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #191C24;
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  /* margin-bottom: 5px; */
+}
+
+input,
+select {
+  width: 100%;
+  /* padding: 8px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+/* delete */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 40%;
+  width: 30%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 1s;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* dashboard */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px;
+}
+
+.menu-item {
+  background-color: #191C24;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  color: gray;
+}

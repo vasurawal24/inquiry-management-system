@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sedan SC", serif;
+  /* background-color: black; */
+}
+a {
+  text-decoration: none !important;
+}
+/*Login start--------------------------------------- */
+.sec-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 32px;
+  font-style: normal;
+  margin: 0px;
+  color: #6c7293;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 em {
+  font-size: 32px;
+  font-style: normal;
+  color: #6c7293;
+}
+
+.text p {
+  font-size: 15px;
+  margin: 0px;
+  color: #6c7293;
+}
+
+.login-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 590px;
+  width: 450px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  background-color: #191c24;
+  border-radius: 24px;
+  backdrop-filter: blur(100px);
+}
+
+.text {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.user-ipt {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.login-btn {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-ipt input {
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: solid #c6d0ef 1px;
+  color: #202020;
+  font-size: 20px;
+}
+
+.user-ipt p {
+  font-size: 20px;
+  margin: 0px;
+  color: #6c7293;
+}
+
+.login-btn a button {
+  color: #6c7293;
+  background-color: #2e3445;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: solid #c6d0ef 1px;
+  color: #f8f8f8;
+  font-size: 20px;
+  height: 100%;
+  width: 340px;
+}
+
+.login-btn p {
+  font-size: 20px;
+  margin: 0px;
+  color: #ffffff;
+}
+
+.login-btn a {
+  font-size: 20px;
+  margin: 0px;
+  color: #6c7293;
+  text-decoration: none;
+}
+
+.login-links {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.login-links div {
+  background-color: #415386;
+  display: block;
+  padding: 7.5px;
+  border-radius: 6px;
+  margin: 12px;
+  color: #c6d0ef;
+}
+
+.login-btn button:hover {
+  background-color: #415386;
+  border-color: #3b4e85;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.user-ipt p:hover {
+  color: #0075ff;
+  cursor: pointer;
+}
+
+.login-links div:hover {
+  cursor: pointer;
+}
+
+.user-ipt input:focus {
+  outline-style: none;
+}
+/*Login end ------------------------------------------*/
+
+/* nav bar start------------------------------------- */
+.nav_bar {
+  display: block;
+  width: inherit;
+  background-color: #191c24;
   color: white;
+  height: 100vh;
+}
+ul {
+  padding-left: 0 !important;
+  margin: 0;
+  list-style: none;
+  width: 125px;
+}
+ul li a {
+  text-decoration: none;
+  color: #6c7293;
 }
 
-.App-link {
-  color: #61dafb;
+.accordion-item {
+  background-color: #191c24 !important;
+  border: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accordion-header {
+  border: none !important;
 }
+
+.accordion-button {
+  background-color: #191c24 !important;
+  color: #6c7293 !important;
+  border: none !important;
+}
+
+.accordion-button::after {
+  content: " ";
+  color: white !important;
+}
+
+ul li a:hover {
+  background-color: black;
+  color: #0056b3;
+  width: 150px;
+}
+.accordion-button:hover {
+  background-color: black !important;
+  width: 150px;
+  color: #0056b3 !important;
+}
+.accordion-body a:hover {
+  color: #0056b3;
+}
+.nev_hover span:hover {
+  color: #0056b3;
+}
+.home_hover {
+  cursor: pointer;
+  color: #6c7293;
+  transition: 0.7s;
+}
+.home_hover:hover {
+  color: #0056b3;
+  transition: 0.7s;
+}
+.logout {
+  transition: 0.7s;
+  color: #6c7293;
+}
+.logout:hover {
+  color: #0056b3;
+  transition: 0.7s;
+}
+.nev_hover {
+  transition: 0.7s;
+}
+.nev_hover span:hover {
+  color: #0056b3;
+  transition: 0.7s;
+}
+/* nav bar end------------------------------------------------- */
+
+/* DASHBOAD start------------------------------------------------- */
+
+.dashboard {
+  background-color: black;
+  width: 83.5%;
+  height: 100%;
+  position: absolute;
+  padding: 80px;
+  top: 30px;
+  left: 250px;
+  /* z-index: -1; */
+}
+.dashboard .menu {
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+  background-color: #191c24;
+}
+.dashboard .menu h2 {
+  color: white;
+  margin: 70px;
+}
+/* DASHBOAD end------------------------------------------------- */
